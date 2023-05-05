@@ -1,0 +1,33 @@
+:root {
+    --main-color: #4286f4;
+    --secondary-color: #24243e;
+    --text-color: #6441a5;
+}
+
+
+body {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.navbar h1 {
+    font-weight: bold;
+    width: 100%;
+    justify-content: center;
+    display: flex;    
+}
+
+header {
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 5px;
+}
+
+.main {  
+    font: bold;
+    display: flex; 
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}

@@ -1,0 +1,37 @@
+:root {
+    --main-color: #353537;
+    --secondary-color: #a92a2a;
+    --text-color: #fff;
+}
+
+header {
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+h1,p,li {
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+}
+
+.navbar {
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: var(--main-color);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
