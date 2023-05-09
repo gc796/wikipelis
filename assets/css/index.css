@@ -1,7 +1,17 @@
 :root {
+<<<<<<< HEAD
   --main-color: #353537;
   --secondary-color: #a92a2a;
   --text-color: #fff;
+=======
+    --main-color: #1f1f20;
+    --secondary-color: #a92a2a;
+    --text-color: #fff;
+>>>>>>> 4f612df5bc746dc1f20051e1c96f80047233b30e
+}
+
+body {
+    background-color: var(--main-color);
 }
 
 header {
@@ -9,10 +19,33 @@ header {
   background-color: var(--main-color);
 }
 
+<<<<<<< HEAD
 h1,
 p,
 li {
   color: var(--text-color);
+=======
+main {
+    width: 70%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h1,p,li {
+    color: var(--text-color);
+>>>>>>> 4f612df5bc746dc1f20051e1c96f80047233b30e
 }
 
 button {
@@ -21,7 +54,23 @@ button {
   border: none;
 }
 
+#principal-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#popular-movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
 .navbar {
+<<<<<<< HEAD
   width: 80%;
   height: 3rem;
   display: flex;
@@ -37,3 +86,56 @@ button {
 .navbar ul li {
   margin: 0 1rem;
 }
+=======
+    width: 70%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0.5rem 0;
+    background-color: var(--main-color);
+}
+
+.navbar div {
+    width: 50%;
+}
+
+.navbar div ul {
+    display: flex;
+    justify-content: right;
+}
+
+.navbar div ul li {
+    margin: 1rem 0.5rem;
+}
+
+.container-principal-movie {
+    width: 70%;
+    margin: auto;
+    color: var(--text-color);
+}
+
+.container-principal-movie h2, .container-principal-movie div button {
+    margin: 1rem 0;
+}
+
+.popular-movies-title {
+    margin: 2rem 0 1rem 0.5rem;
+    color: var(--text-color);
+}
+
+.card, .card img {
+    width: 10rem;
+    height: 15rem;
+    margin: 1rem auto;
+    border-radius: 15px;
+    transition: transform 300ms;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 300ms;
+    cursor: pointer;
+}
+>>>>>>> 4f612df5bc746dc1f20051e1c96f80047233b30e
