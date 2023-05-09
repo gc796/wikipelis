@@ -1,7 +1,13 @@
 :root {
+<<<<<<< HEAD
+  --main-color: #353537;
+  --secondary-color: #a92a2a;
+  --text-color: #fff;
+=======
     --main-color: #1f1f20;
     --secondary-color: #a92a2a;
     --text-color: #fff;
+>>>>>>> 4f612df5bc746dc1f20051e1c96f80047233b30e
 }
 
 body {
@@ -9,10 +15,16 @@ body {
 }
 
 header {
-    width: 100%;
-    background-color: var(--main-color);
+  width: 100%;
+  background-color: var(--main-color);
 }
 
+<<<<<<< HEAD
+h1,
+p,
+li {
+  color: var(--text-color);
+=======
 main {
     width: 70%;
     margin: auto;
@@ -33,12 +45,13 @@ h3 {
 
 h1,p,li {
     color: var(--text-color);
+>>>>>>> 4f612df5bc746dc1f20051e1c96f80047233b30e
 }
 
 button {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    border: none;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
 }
 
 #principal-movie {
@@ -57,6 +70,23 @@ button {
 }
 
 .navbar {
+<<<<<<< HEAD
+  width: 80%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  background-color: var(--main-color);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+=======
     width: 70%;
     height: 3rem;
     display: flex;
@@ -108,3 +138,4 @@ button {
     transition: transform 300ms;
     cursor: pointer;
 }
+>>>>>>> 4f612df5bc746dc1f20051e1c96f80047233b30e

@@ -5,31 +5,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie</title>
+    <title>Movies</title>
     <link rel="stylesheet" href="movie.css">
+    <!--Logo--------------------------->
+    <link rel="shortcut icon" href="assets\css\208aed938ad94b8b6c0c77ade1572bc8.jpg">
+    <!--Family-Font-Poppins------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+    <!--Monoton-Font------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+    <!--Using-Font-Awesome------------------->
+    <script src="https://kit.fontawesome.com/97eec942a3.js" crossorigin="anonymous"></script>
+    <!--Script Js-->
+    <script src="./assets/js/movie.js"></script>
+    
+
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar">
-            <h1> Wikipelia </h1>
-        </nav>
+    <!--Scroll-Progress-Bar----------------------->
+    <div id="progress">
+        <span id="progress-value"></span>
+    </div>
 
-    </header>
+    <!--navigation----------------------------------->
+    <nav class="navigation">
 
-    <main>
+        <!--menu-btn---------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
 
-        <span> Search movie: </span>
-            <input type="text" class="form-control" id="movie-search-box" placeholder="Search Movie Title ...">
+        <!--logo---------------------------->
+        <a href="movie.html" class="logo">
+            Wikipelis<span>.hd</span>
+        </a>
+
+        <!--menu---------------------------->
+        <ul class="menu">
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Releases</a></li>
+
+        </ul>
 
 
-    </main>
+        <!--search-box----------------------->
+        <form action="" class="search-box">
+            <!--input-->
+            <input type="text" name="search" placeholder="Search Movie" class="search-input" required/>
+            <!--btn-->
+            <button type="submit"> 
+                <i class="fa-solid fa-magnifying-glass"></i>
+             </button>
+
+        </form>
+    </nav>
+    <!--nav-end------------------------------>
+
+    <!--movie-banner------------------------>
+    <section class="movie-banner">
+
+        <!--img-------------------------------
+        <div class="m-banner-img">
+            <img src="assets\css\cover.jpg">
+        </div>
+    -->
+    </section>
+
+
+    <!--slider------------------------------->
+    <section id="main-slider">   
+        
+        <div class="main-slider-box"> </div>
+        
+    </section>
+
 
     <footer>
 
     </footer>
 
-    <body>
+</body>
+
+<script>
+    
+    let scrollPercentage = () => {
+        let scrollPercentage = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round(pos * 100 / calcHeight);
+        scrollProgress.style.background = `conic-gradient(#e70634 ${scrollValue})%, #2b2f38 ${scrollValue}%)`;
+    }
+
+    window.onscroll = scrollPercentage;
+    window.onload = scrollPercentage;
+
+</script>
+
 
 </html>
