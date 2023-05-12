@@ -1,16 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <!--Title----------------------->
+    <title>Releases</title>
+    <!--Family-Font-Poppins------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Monoton-Font------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Using-Font-Awesome------------------->
+    <script src="https://kit.fontawesome.com/97eec942a3.js" crossorigin="anonymous"></script>
+    <!--CSS------------------------->
+    <link rel="stylesheet" href="releases.css">
+    <!--Script Js------------------------------>
+    <script src="./assets/js/swiper js/swiper-bundle.min.js"></script>
+    <!--jQuery-------------------------------->
+    <script src="./assets/js/jQuery.js"></script>
+    <!--CSS-Swiper---------------------------->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
 </head>
+
 <body>
-    
+    <!--Scroll-Progress-Bar--=========================-->
+    <div id="progress">
+        <span id="progress-value"></span>
+    </div>
+
+    <!--navigation--==============================-->
+    <nav class="navigation">
+
+        <!--menu-btn---------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+
+        <!--logo---------------------------->
+        <a href="releases-movies.html" class="logo">
+            Wikipelis
+        </a>
+
+        <!--menu---------------------------->
+        <ul class="menu">
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Releases</a></li>
+
+        </ul>
 
 
+        <!--search-box----------------------->
+        <form action="" class="search-box">
+            <!--input-->
+            <input type="text" name="search" placeholder="Search Movie" class="search-input" required />
+            <!--btn-->
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
 
+        </form>
+    </nav>
+
+    <!--nav--end---------------------------------->
+
+    <!--slider===================================================-->
+
+    <section id="main-slider">
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!--1------------------------------------>
+                <div class="swiper-slide">
+
+                    <!--box----------------->
+                    <div class="main-slider-box">
+
+                        <!--overlayer-->
+                        <a href="#" class="main-slider-overlay">
+                            <i class="fas fa-play"></i>
+                        </a>
+
+                        <!--img----------------->
+                        <div class="main-slider-img">
+                            <img src="./assets/img/releases/p-1.jpg" alt="Poster">
+                        </div>
+
+                        <!--text---------------->
+                        <div class="main-slider-text">
+                            <!--quality-------->
+                            <span class="quality">Full HD</span>
+
+                            <!--bottom-text---->
+                            <div class="bottom-text">
+                                <!--name---->
+                                <div class="movie-name">
+                                    <span>2014</span>
+                                    <strong>Paranormal Activity: The Marked Ones</strong>
+                                </div>
+                                <!--category--and--rating------>
+                                <div class="category-rating">
+                                    <div class="category">
+                                        <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                                    </div>
+                                    <!--rating---->
+                                    <div class="rating">
+                                        5.2 <img src="./assets/img/releases/IMDb-icon.png" alt="imbd">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--2------------------------------------->
+                <div class="swiper-slide">
+
+                    <!--box----------------->
+                    <div class="main-slider-box">
+
+                        <!--overlayer-->
+                        <a href="#" class="main-slider-overlay">
+                            <i class="fas fa-play"></i>
+                        </a>
+
+                        <!--img----------------->
+                        <div class="main-slider-img">
+                            <img src="./assets/img/releases/p-2.jpg" alt="Poster">
+                        </div>
+
+                        <!--text---------------->
+                        <div class="main-slider-text">
+                            <!--quality-------->
+                            <span class="quality">Full HD</span>
+
+                            <!--bottom-text---->
+                            <div class="bottom-text">
+                                <!--name---->
+                                <div class="movie-name">
+                                    <span>2014</span>
+                                    <strong>Paranormal Activity: The Marked Ones</strong>
+                                </div>
+                                <!--category--and--rating------>
+                                <div class="category-rating">
+                                    <div class="category">
+                                        <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                                    </div>
+                                    <!--rating---->
+                                    <div class="rating">
+                                        5.2 <img src="./assets/img/releases/IMDb-icon.png" alt="imbd">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--3----------------------------------------->
+                <div class="swiper-slide">
+
+                    <!--box----------------->
+                    <div class="main-slider-box">
+
+                        <!--overlayer-->
+                        <a href="#" class="main-slider-overlay">
+                            <i class="fas fa-play"></i>
+                        </a>
+
+                        <!--img----------------->
+                        <div class="main-slider-img">
+                            <img src="./assets/img/releases/p-3.jpg" alt="Poster">
+                        </div>
+
+                        <!--text---------------->
+                        <div class="main-slider-text">
+                            <!--quality-------->
+                            <span class="quality">Full HD</span>
+
+                            <!--bottom-text---->
+                            <div class="bottom-text">
+                                <!--name---->
+                                <div class="movie-name">
+                                    <span>2014</span>
+                                    <strong>Paranormal Activity: The Marked Ones</strong>
+                                </div>
+                                <!--category--and--rating------>
+                                <div class="category-rating">
+                                    <div class="category">
+                                        <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                                    </div>
+                                    <!--rating---->
+                                    <div class="rating">
+                                        5.2 <img src="./assets/img/releases/IMDb-icon.png" alt="imbd">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--4--------------------------------------------------->
+                <div class="swiper-slide">
+
+                    <!--box----------------->
+                    <div class="main-slider-box">
+
+                        <!--overlayer-->
+                        <a href="#" class="main-slider-overlay">
+                            <i class="fas fa-play"></i>
+                        </a>
+
+                        <!--img----------------->
+                        <div class="main-slider-img">
+                            <img src="./assets/img/releases/p-4.jpg" alt="Poster">
+                        </div>
+
+                        <!--text---------------->
+                        <div class="main-slider-text">
+                            <!--quality-------->
+                            <span class="quality">Full HD</span>
+
+                            <!--bottom-text---->
+                            <div class="bottom-text">
+                                <!--name---->
+                                <div class="movie-name">
+                                    <span>2014</span>
+                                    <strong>Paranormal Activity: The Marked Ones</strong>
+                                </div>
+                                <!--category--and--rating------>
+                                <div class="category-rating">
+                                    <div class="category">
+                                        <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                                    </div>
+                                    <!--rating---->
+                                    <div class="rating">
+                                        5.2 <img src="./assets/img/releases/IMDb-icon.png" alt="imbd">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--5------------------------------------------------->
+                <div class="swiper-slide">
+
+                    <!--box----------------->
+                    <div class="main-slider-box">
+
+                        <!--overlayer-->
+                        <a href="#" class="main-slider-overlay">
+                            <i class="fas fa-play"></i>
+                        </a>
+
+                        <!--img----------------->
+                        <div class="main-slider-img">
+                            <img src="./assets/img/releases/p-5.jpg" alt="Poster">
+                        </div>
+
+                        <!--text---------------->
+                        <div class="main-slider-text">
+                            <!--quality-------->
+                            <span class="quality">Full HD</span>
+
+                            <!--bottom-text---->
+                            <div class="bottom-text">
+                                <!--name---->
+                                <div class="movie-name">
+                                    <span>2014</span>
+                                    <strong>Paranormal Activity: The Marked Ones</strong>
+                                </div>
+                                <!--category--and--rating------>
+                                <div class="category-rating">
+                                    <div class="category">
+                                        <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                                    </div>
+                                    <!--rating---->
+                                    <div class="rating">
+                                        5.2 <img src="./assets/img/releases/IMDb-icon.png" alt="imbd">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--6----------------------------------->
+                <div class="swiper-slide">
+
+                    <!--box----------------->
+                    <div class="main-slider-box">
+
+                        <!--overlayer-->
+                        <a href="#" class="main-slider-overlay">
+                            <i class="fas fa-play"></i>
+                        </a>
+
+                        <!--img----------------->
+                        <div class="main-slider-img">
+                            <img src="./assets/img/releases/p-6.jpg" alt="Poster">
+                        </div>
+
+                        <!--text---------------->
+                        <div class="main-slider-text">
+                            <!--quality-------->
+                            <span class="quality">Full HD</span>
+
+                            <!--bottom-text---->
+                            <div class="bottom-text">
+                                <!--name---->
+                                <div class="movie-name">
+                                    <span>2014</span>
+                                    <strong>Paranormal Activity: The Marked Ones</strong>
+                                </div>
+                                <!--category--and--rating------>
+                                <div class="category-rating">
+                                    <div class="category">
+                                        <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                                    </div>
+                                    <!--rating---->
+                                    <div class="rating">
+                                        5.2 <img src="./assets/img/releases/IMDb-icon.png" alt="imbd">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--btns-------------------------------------->
+    <div class="slider-btns">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!--slider---end------------------------------------>
+
+    <!--==JS-Swiper==========================-->
+    <script src="./assets/js/swiper js/swiper-bundle.min.js"></script>
+
+    <!--Initialize Swiper--------------------->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+    <!--footer--================================================-->
+    <footer>
+        <!--footer-logo---------------------->
+        <a href="releases-movies.html" class="logo">
+            Releases
+        </a>
+    </footer>
 
 </body>
+
 </html>
