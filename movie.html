@@ -8,31 +8,33 @@
     <title>Movies</title>
     <link rel="stylesheet" href="movie.css">
     <!--Logo--------------------------->
-    <link rel="shortcut icon" href="assets\css\208aed938ad94b8b6c0c77ade1572bc8.jpg">
+    <link rel="shortcut icon" href="./assets/css/waluigi logo.jpg">
     <!--Family-Font-Poppins------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--Monoton-Font------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--Using-Font-Awesome------------------->
     <script src="https://kit.fontawesome.com/97eec942a3.js" crossorigin="anonymous"></script>
-    <!--Script Js-->
+    <!--Script Js------------------------------>
     <script src="./assets/js/movie.js"></script>
-    
+    <!--jQuery-------------------------------->
+    <script src="./assets/js/jQuery.js"></script>
+
 
 </head>
 
 <body>
 
-    <!--Scroll-Progress-Bar----------------------->
+    <!--Scroll-Progress-Bar--=========================-->
     <div id="progress">
         <span id="progress-value"></span>
     </div>
 
-    <!--navigation----------------------------------->
+    <!--navigation--==============================-->
     <nav class="navigation">
 
         <!--menu-btn---------------->
@@ -59,56 +61,92 @@
         <!--search-box----------------------->
         <form action="" class="search-box">
             <!--input-->
-            <input type="text" name="search" placeholder="Search Movie" class="search-input" required/>
+            <input type="text" name="search" placeholder="Search Movie" class="search-input" required />
             <!--btn-->
-            <button type="submit"> 
+            <button type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
-             </button>
+            </button>
 
         </form>
     </nav>
-    <!--nav-end------------------------------>
+    <!--=============nav-end====================================-->
 
-    <!--movie-banner------------------------>
+    <!--movie-banner--===============================-->
     <section class="movie-banner">
 
-        <!--img-------------------------------
+        <!--img------------------------------->
         <div class="m-banner-img">
-            <img src="assets\css\cover.jpg">
+            <img src="assets\img\mario-portada.jpg">
         </div>
-    -->
+
+        <!--content---------------------------------->
+        <div class="banner-container">
+
+            <!--title-container---------------------------->
+            <div class="title-container">
+
+                <!---title---------------->
+                <div class="movie-title">
+                    <h1>The Super Mario Bros.Movie</h1>
+
+                </div>
+            </div>
+
+            <!--more--about--movie------------------------->
+            <div class="more-about-movie">
+                <span class="quality">Full HD</span>
+                <div class="info">
+                    <span>8.2 Rating</span>
+                    <span>2023</span>
+                    <span>1h 32m</span>
+                    <span>English</span>
+                </div>
+
+            </div>
+
+            <!--title-bottom-=====================================-->
+            <div class="title-bottom">
+                <!--category------------------->
+                <div class="category">
+                    <strong>Category</strong><br />
+                    <a>Animation</a><a>Adventure</a><a>Comedy</a>
+                </div>
+                <!--trailer-btn---------------->
+                <a href="#" class="watch-btn">Watch trailer</a>
+            </div>
+        </div>
+    </section>
+    <!--Banner--end-------------------------->
+
+
+    <!--details-====================================-->
+    <section class="movie-details">
+        <strong>The Super Mario Bros.Movie</strong>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, vel repudiandae nulla rerum sunt
+            dolorum eveniet cupiditate excepturi veritatis eos, nisi voluptate perspiciatis laudantium odio quaerat
+            dicta praesentium, explicabo consectetur.</p>
     </section>
 
+    <!--SreenShots------------------------------------------------->
+    <section class="screenshots">
+        <strong>ScreenShots</strong>
+        <!--screenshots--container--------------------------------->
+        <div class="screen-s-container">
+            <img src="./assets/img/1302496.jpg" alt="">
+            <img src="./assets/img/1302522.jpg" alt="">
+        </div>
 
-    <!--slider------------------------------->
-    <section id="main-slider">   
-        
-        <div class="main-slider-box"> </div>
-        
+
     </section>
 
-
+    <!--footer--================================================-->
     <footer>
-
+        <!--footer-logo---------------------->
+        <a href="movie.html" class="logo">
+            Movies<span>.hd</span>
+        </a>
     </footer>
 
 </body>
-
-<script>
-    
-    let scrollPercentage = () => {
-        let scrollPercentage = document.getElementById("progress");
-        let progressValue = document.getElementById("progress-value");
-        let pos = document.documentElement.scrollTop;
-        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        let scrollValue = Math.round(pos * 100 / calcHeight);
-        scrollProgress.style.background = `conic-gradient(#e70634 ${scrollValue})%, #2b2f38 ${scrollValue}%)`;
-    }
-
-    window.onscroll = scrollPercentage;
-    window.onload = scrollPercentage;
-
-</script>
-
 
 </html>
