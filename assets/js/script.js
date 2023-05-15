@@ -4,6 +4,7 @@ const IMG_LINK =  `https://image.tmdb.org/t/p/w185/`;
 const IMG_BACK_LINK = "https://image.tmdb.org/t/p/original/"
 const SEARCH_INPUT = document.getElementById("search-movie-input");
 const SEARCH_MOVIE_LIST = document.getElementById("search-movie-list");
+const MOVIE_SELECTED = document.getElementById("movie-selected")
 
 const options = {
   method: 'GET',
@@ -34,7 +35,7 @@ function loadMovies(title) {
   .then(response => response.json())
   .then(response => {
     displayMovieList(response.results);
-    console.log(response.results)
+    console.log("loadMovies",response.results)
   })
   .catch(err => console.error(err));
 }
@@ -42,26 +43,106 @@ function loadMovies(title) {
 function displayMovieList(data){
   console.log("dataaaaaaa", data)
   SEARCH_MOVIE_LIST.innerHTML = "";
-  
+
   data.forEach(movie => {
     let releaseDate  = movie.release_date.slice(0,4);
     let movieDiv = document.createElement("div");
 
     movieDiv.classList.add("search-movie-item");
-    movieDiv.setAttribute("id", "search-movie-item");
+    movieDiv.dataset.id = movie.id;
+    // movieDiv.setAttribute("id", "search-movie-item");
 
     movieDiv.innerHTML = `
       <div class="search-movie-poster">
         <img src="${IMG_LINK}${movie.poster_path}" alt="Movie title" >
       </div>
       <div class="search-movie-info">
-        <h4>${movie.title ? movie.title : "No disponible"}</h4>
-      <span>${releaseDate ? releaseDate : "No date"}</span>
+        <h4>${movie.title ? movie.title : "Not available"}</h4>
+      <span>${releaseDate ? releaseDate : "No available"}</span>
       </div>
     `
     SEARCH_MOVIE_LIST.appendChild(movieDiv);
+
   })
 
+  laoadMovieSelected();
+
+}
+
+function laoadMovieSelected() {
+  const moviesList = SEARCH_MOVIE_LIST.querySelectorAll(".search-movie-item")
+
+  moviesList.forEach(movie => {
+    movie.addEventListener("click", () => {
+      SEARCH_MOVIE_LIST.classList.add("hide-movie-list");
+      SEARCH_INPUT.classList.remove("input-list");
+      SEARCH_INPUT.value = "";
+
+      fetch(`https://api.themoviedb.org/3/movie/${movie.dataset.id}?language=en-US`, options)
+      .then(response => response.json())
+      .then(response => {
+        console.log("loadmovieselected", response);
+        displayMovieSelected(response);
+      })
+      .catch(err => console.error(err));
+
+    })
+  })
+
+}
+
+function displayMovieSelected(movieDetails) {
+  console.log(movieDetails);
+  let releaseDate  = movieDetails.release_date.slice(0,4);
+  let rating = movieDetails.vote_average ? movieDetails.vote_average.toString().slice(0,3) : "-";
+
+
+  MOVIE_SELECTED.style.backgroundImage = `
+  linear-gradient(0deg, rgba(28,31,37,0.7) 0%, 
+  rgba(0,0,0,0.7) 100%),url(${IMG_BACK_LINK}${movieDetails.backdrop_path}), url("./assets/img/background-default.jpg")`;
+
+  MOVIE_SELECTED.innerHTML = `
+  <div class="movie-title-container">
+  <h2>${movieDetails.title}</h2>
+</div>
+<!--content---------------------------------->
+<div class="banner-container">
+
+  <div class="movie-poster">
+    <img src="${IMG_LINK}${movieDetails.poster_path}" alt="Movie poster" >
+  </div>
+
+  <!--more--about--movie------------------------->
+  <div class="more-about-movie">
+    <div>
+    <div class="info">
+      <p>Rating: </p><span>${rating}</span>
+      <p>Year: </p><span> ${releaseDate}</span>
+      <p>Duration: </p><span> ${movieDetails.runtime != 0 ? movieDetails.runtime : "-"}</span>
+      <p>Language: </p><span> ${movieDetails.spoken_languages[0] ? movieDetails.spoken_languages[0].english_name : movieDetails.original_language}</span>
+      <span class="quality">Full HD</span>
+    </div>
+    <div class="movie-details">
+      <h4>Description:</h4>
+      <p>${movieDetails.overview ? movieDetails.overview : "-"}</p>
+    </div>
+  </div>
+    <!--more-about-movie-bottom-=====================================-->
+    <div class="more-about-movie-bottom">
+      <!--category------------------->
+      <div class="category">
+        <h4>Category:</h4>
+        <p>${movieDetails.genres[0] ? movieDetails.genres[0].name : ""}</p>
+        <p>${movieDetails.genres[1] ? movieDetails.genres[1].name : ""}</p>
+        <p>${movieDetails.genres[2] ? movieDetails.genres[2].name : ""}</p>
+      </div>
+      <!--trailer-btn---------------->
+      <a href="#" class="watch-btn">Watch trailer</a>
+    </div>
+  </div>
+</div>
+  
+  `
 }
 
 //   function firstMovie(movie){
