@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wikipelis</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wikipelis</title>
 
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <button>Top Movies</button>
-        <button>Releases</button>
-        <button>Register</button>
-        <button>Log in</button>
-      </nav>
-    </header>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-        <main>
-          <div class="search-movie">
-            <h1>
-              <a href="index.html" class="logo">Wikipelis</a>
-            </h1>
-  
-            <input type="text" class="search-movie-input" id="search-movie-input" placeholder="Search movie" onkeyup="findMovies()" onclick = "findMovies()"> 
-            
-            <div class="search-movie-list hide-movie-list" id ="search-movie-list">
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+</head>
 
-            </div>
-          </div>
+<body>
+  <header>
+    <nav class="navbar">
+      <button>Top Movies</button>
+      <button>Releases</button>
+      <button>Register</button>
+      <button>Log in</button>
+    </nav>
+  </header>
 
-        </main>
+  <main>
+    <div class="search-movie">
+      
+        <a href="index.html" class="logo"><h1>Wikipelis</h1></a>
+      
 
-        <footer>
+      <input type="text" class="search-movie-input" id="search-movie-input" placeholder="Search movie"
+        onkeyup="findMovies()" onclick="findMovies()">
 
-        </footer>
+      <div class="search-movie-list hide-movie-list" id="search-movie-list">
 
-    <script src="./assets/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/97eec942a3.js" crossorigin="anonymous"></script>
-    </body>
+      </div>
+    </div>
+
+    <section class="movie-banner" id="movie-selected">
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/97eec942a3.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
-
-
-
