@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipelis - Register</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+  
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/register.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-responsive">
+            <!--logo---------------------------->
+            <div>
+                <a href="releases-movies.html" class="logo">
+                    Wikipelis
+                </a>
+            </div>
+
+            <!--menu---------------------------->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Top Movies</a></li>
+                <li><a href="#">Releases</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                Wikipelis
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="btn">Home</a>
+                <a class="btn">Top Movies</a>
+                <a class="btn">Releases</a>
+                <a class="btn">Log in</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--form---------------------------->
+        <form id="registration-form" action="">
+            <div class="img-form">
+
+            </div>
+
+            <fieldset>
+                <legend>Registration form</legend>
+                <div class="form-label-input">
+                    <input type="text" id="username" name="username" placeholder="Username*">
+                    <span id="userError">Min 4 characters</span>
+                </div>
+                <div class="form-label-input">
+                    <input type="email" id="email" name="email" placeholder="Email*">
+                    <span id="emailError">Enter a valid email</span>
+                </div>
+                <div class="form-label-input">
+                    <input type="password" id="password" name="password" placeholder="Password*">
+                    <span id="pwError">Min 8 characters</span>
+                </div>
+                
+                <div class="form-label-input">
+                    <input type="password" id="password2" name="password2" placeholder="Repeat password*">
+                    <span id="pw2Error">Wrong password</span>
+                </div>
+
+                <div class="form-btn">
+                    <button type="submit" class="btn" onclick="validateRegister()">Register</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <script src="./assets/js/register-form.js"></script>
+</body>
+</html>

@@ -20,28 +20,31 @@
 <body>
   <header>
     <nav class="navbar">
-      <button>Top Movies</button>
-      <button>Releases</button>
-      <button>Register</button>
-      <button>Log in</button>
+      <div>
+        <a class="btn">Top Movies</a>
+        <a class="btn">Releases</a>
+        <a href="register.html" class="btn register">Register</a>
+        <a class="btn">Log in</a>
+      </div>
     </nav>
   </header>
 
   <main>
     <div class="search-movie">
       
-        <a href="index.html" class="logo"><h1>Wikipelis</h1></a>
+      <a href="index.html" class="logo"><h1>Wikipelis</h1></a>
       
-
       <input type="text" class="search-movie-input" id="search-movie-input" placeholder="Search movie"
         onkeyup="findMovies()" onclick="findMovies()">
 
       <div class="search-movie-list hide-movie-list" id="search-movie-list">
-
+        <!-- Lista de películas -->
       </div>
+
     </div>
 
     <section class="movie-banner" id="movie-selected">
+      <!-- Contenido de la película seleccionada -->
     </section>
 
   </main>
@@ -50,7 +53,7 @@
 
   </footer>
 
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/index.js"></script>
   <script src="https://kit.fontawesome.com/97eec942a3.js" crossorigin="anonymous"></script>
 </body>
 

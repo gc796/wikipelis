@@ -1,4 +1,3 @@
-const id = "500";
 const API_LINK = `https://api.themoviedb.org/3`;
 const IMG_LINK =  `https://image.tmdb.org/t/p/w185/`;
 const IMG_BACK_LINK = "https://image.tmdb.org/t/p/original/"
