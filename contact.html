@@ -14,7 +14,7 @@
       rel="stylesheet">
   
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/register.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <nav class="navbar-responsive">
             <!--logo---------------------------->
             <div>
-                <a href="releases-movies.html" class="logo">
+                <a href="index.html" class="logo">
                     Wikipelis
                 </a>
             </div>
@@ -37,7 +37,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Top Movies</a></li>
                 <li><a href="#">Releases</a></li>
-                <li><a href="#">Log in</a></li>
             </ul>
         </nav>
 
@@ -50,37 +49,32 @@
                 <a href="index.html" class="btn">Home</a>
                 <a class="btn">Top Movies</a>
                 <a class="btn">Releases</a>
-                <a class="btn">Log in</a>
             </div>
         </nav>
     </header>
 
     <main>
         <!--form---------------------------->
-        <form id="registration-form" action="">
+        <form id="contact-form" action="">
             <div class="img-form">
 
             </div>
 
             <fieldset>
-                <legend>Registration form</legend>
+                <legend>Contact us</legend>
                 <div class="form-label-input">
-                    <input type="text" id="username" name="username" placeholder="Username*">
-                    <span id="userError">Min 4 characters</span>
+                    <input type="text" id="first-name" name="first-name" placeholder="First name*">
+                    <span id="firstNameError">Cannot be left empty</span>
                 </div>
                 <div class="form-label-input">
                     <input type="email" id="email" name="email" placeholder="Email*">
                     <span id="emailError">Enter a valid email</span>
                 </div>
                 <div class="form-label-input">
-                    <input type="password" id="password" name="password" placeholder="Password*">
-                    <span id="pwError">Min 8 characters</span>
+                    <textarea id="contact-area" name="textarea" placeholder="How Can We Help You?*"></textarea>
+                    <span id="contact-error">Cannot be left empty</span>
                 </div>
-                
-                <div class="form-label-input">
-                    <input type="password" id="password2" name="password2" placeholder="Repeat password*">
-                    <span id="pw2Error">Wrong password</span>
-                </div>
+
 
                 <div class="form-btn">
                     <button type="submit" class="btn" onclick="validateRegister()">Register</button>
@@ -90,6 +84,6 @@
 
     </main>
 
-    <script src="./assets/js/register-form.js"></script>
+    <script src="./assets/js/contact.js"></script>
 </body>
 </html>

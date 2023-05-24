@@ -40,12 +40,15 @@ h4 {
   margin: 0 0.5rem;
   padding: 10px;
   background-color: var(--secondary-color);
-  border: 1px solid #ffffff2c;
-  border-radius: 3px;
   font-size: 12px;
   color: var(--text-color);
   letter-spacing: 1px;
   cursor: pointer;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left:2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  border-right: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
   transition: all ease 0.3s;
 }
 
@@ -58,6 +61,10 @@ h4 {
 
 .btn:hover {
   background-color: var(--main-color);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-right:2px solid rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.7);
   transition: all ease 0.3s;
 }
 
@@ -83,7 +90,6 @@ h4 {
 }
 
 /*-----searcher----------------------------------------- */
-
 .search-movie {
   display: flex;
   flex-direction: column;
