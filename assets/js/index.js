@@ -144,60 +144,6 @@ function displayMovieSelected(movieDetails) {
   `
 }
 
-//   function firstMovie(movie){
-
-//     // Select parent element
-//     let section = document.getElementById("principal-movie");
-//     // Creates child element
-//     let div = document.createElement("div");
-
-//     //Movie background
-//     section.style.backgroundImage = `radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 80%),url(${IMG_BACK_LINK}${movie.backdrop_path})`;
-
-//     // Add class to child element 
-//     div.classList.add("container-principal-movie");
-  
-//     // Html inyection in parent element
-//     div.innerHTML = `
-//         <h2>${movie.title}</h2>
-//         <div>
-//            <p>${movie.overview}</p>
-//            <button>More info..</button>
-//         </div>
-        
-//     `
-//     section.appendChild(div);
-//   }
-
-//   function popularMoviesGrid(data){
-//     let cont = 0;
-//     data.forEach(movie => {
-//       // Agarro la primer movie y la uso como principal
-//       if(cont == 0) {
-
-//        firstMovie(movie);
-//         // Este if para que no muestre la ultima movie (estetica)
-//       } else if (cont !== (data.length-1)) {
-//          // Select parent element
-//          let parent = document.getElementById("popular-movies");
-//         // Creates child element
-//          let div = document.createElement("div");
-//          // Add class to child element 
-//          div.classList.add("card");
-//          // Html inyection in parent element
-//          div.innerHTML = `
-//          <div>
-//          <a href="movie.html"><img src="${IMG_LINK}${movie.poster_path}" alt="${movie.title}" /> </a>
-//          </div>
-//          `;
-//          /* agrego elemento hijo  al padre*/
-//          parent.appendChild(div);
-         
-//         }
-//         cont++;
-//     });
-// }
-
 
       
       

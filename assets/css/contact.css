@@ -49,40 +49,35 @@ a {
 .btn {
     margin: 0 0.5rem;
     padding: 10px;
-    border: none;
-    outline: none;
     background-color: var(--secondary-color);
     font-size: 12px;
     color: var(--text-color);
     letter-spacing: 1px;
     cursor: pointer;
     border-top: 2px solid rgba(255, 255, 255, 0.5);
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-left:2px solid rgba(255, 255, 255, 0.5);
     border-bottom: 2px solid rgba(0, 0, 0, 0.7);
     border-right: 2px solid rgba(0, 0, 0, 0.7);
     border-radius: 5px;
-
     transition: all ease 0.3s;
-}
-
-.btn:focus,
-.btn:hover,
-.btn:active,
-.btn:visited {
-    outline: none;
+  }
+  
+  .btn:focus,
+  .btn:hover,
+  .btn:active,
+  .btn:visited {
     color: var(--text-color)
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     background-color: var(--main-color);
-    border-bottom: 2px solid var(--secondary-color);
-    border-right: 2px solid var(--secondary-color);
-    border-top: 2px solid rgba(0, 0, 0, 0.5);
-    border-left: 2px solid rgba(0, 0, 0, 0.5);
-
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-right:2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(0, 0, 0, 0.7);
+    border-left: 2px solid rgba(0, 0, 0, 0.7);
     transition: all ease 0.3s;
-}
-
+  }
+  
 .navbar-responsive {
     display: none;
 }
