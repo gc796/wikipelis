@@ -5,88 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Top 10 Movies</title>
+    <title>Top Movies</title>
 
     <!--CSS------------------->
     <link rel="stylesheet" href="top-movies.css">
 
-    <!--Family-Font-Poppins------------------->
+    <!--Font-Poppins------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!--Monoton-Font------------------->
+    <!--Font-Monoton------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!--Using-Font-Awesome------------------->
+    <!--Font-Awesome------------------->
     <script src="https://kit.fontawesome.com/97eec942a3.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    
-    <!--Scroll-Progress-Bar--=========================-->
-    <div id="progress">
-        <span id="progress-value"></span>
-    </div>
 
-    <!--navigation--==============================-->
+    <!--Nav-Bar------------------->   
     <nav class="navigation">
 
-        <!--menu-btn---------------->
+        <!--Menu----------------->
         <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon">
             <span class="nav-icon"></span>
         </label>
 
-        <!--logo---------------------------->
-        <a href="releases-movies.html" class="logo">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="top-movies.html">Movies</a></li>
+            <li><a href="releases-movies.html">Releases</a></li>
+        </ul>
+
+        <!--Logo---------------------------->
+        <a href="top-movies.html" class="logo">
             Wikipelis
         </a>
 
-        <!--menu---------------------------->
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">Releases</a></li>
-        </ul>
-
-        <!--search-box----------------------->
+        <!--Search-Box----------------------->
         <form action="" class="search-box" id="form">
             <!--input-->
-            <input type="text" name="search" placeholder="Search Movie" class="search-input" id="search"/>
+            <input type="text" name="search" placeholder="Search Movie" class="search" id="search"/>
             <!--btn-->
             <button type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
 
         </form>
+        
     </nav>
-
-    <!--nav--end---------------------------------->
     
     <div id="myNav" class="overlay">
 
-        <!-- Button to close the overlay navigation -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      
-        <!-- Overlay content -->
+
         <div class="overlay-content" id="overlay-content"></div>
-        
+
         <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
-        
         <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
 
       </div>
 
+    <div id="tags"></div>
+    
     <main id="main"></main>
 
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    <!--JS------------------->
     <script src="top-movies.js"></script>
+
 </body>
 </html>
