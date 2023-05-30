@@ -25,8 +25,6 @@
     color: #080808;
   }
   
-  /*-----hide-default-scroll-bar------------ */
-  
   body::-webkit-scrollbar {
     display: none;
   }
@@ -35,8 +33,6 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  
-  /*----fixed--navigation--button---------------*/
   
   .fix-icon .menu-icon {
     position: fixed;
@@ -51,8 +47,7 @@
     align-items: center;
   }
   
-  
-  /* -----navigation-------------------------*/
+  /*-------Nav Bar---------------------------*/
   
   .navigation {
     display: flex;
@@ -117,7 +112,7 @@
     display: none;
   }
   
-  /*-------menu---------------------------*/
+  /*-------Menu---------------------------*/
   
   .menu {
     position: fixed;
@@ -160,7 +155,7 @@
     }
   }
   
-  /*-----logo----------------------------------------- */
+  /*-------Logo---------------------------*/
   
   .logo {
     color: #6806e7;
@@ -181,7 +176,7 @@
     letter-spacing: 2px;
   }
   
-  /*---------------search box-------------------------*/
+  /*-------Search Box---------------------------*/
   
   .search-box {
     background-color: #d1d1d111;
@@ -213,7 +208,35 @@
     cursor: pointer;
   }
 
-/*---main------------------------------------------*/
+  /*-------Tags---------------------------*/
+
+  #tags{
+    width:80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.tag{
+    color:white;
+    padding:10px 20px;
+    background-color: #6806e7;
+    border-radius: 50px;
+    margin:5px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+.tag.highlight{
+    background-color: #b17bf8;
+}
+.no-results{
+    color:white;
+}
+
+  /*-------Main---------------------------*/
 
 main{
     display:flex;
@@ -311,7 +334,20 @@ main{
     font-weight: 600;
 }
 
-/*---overlay------------------------------------------*/
+.know-more{
+  background-color: orange;
+  color:white;
+  font-size: 16px;
+  font-weight: bold;
+  border:0;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 5px;
+  cursor: pointer
+
+}
+
+  /*-------Overlay---------------------------*/
 
 .overlay {  
     height: 100%;
@@ -353,19 +389,6 @@ main{
     right: 45px;
     font-size: 60px;
   }
-
-  .know-more{
-    background-color: orange;
-    color:white;
-    font-size: 16px;
-    font-weight: bold;
-    border:0;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin-top: 5px;
-}
-  
-/*---end overlay------------------------------------------*/
 
   @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
@@ -419,4 +442,3 @@ main{
 .dots .dot.active{
     border-color: orange;
 }
-
